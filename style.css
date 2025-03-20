@@ -97,6 +97,29 @@ li {
     color: #3C87FF;
 }
 
+.edit-btn,
+.delete-btn {
+    border: none;
+    background: transparent;
+    color: #3C87FF;
+    font-size: 18px;
+    padding: 5px;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+}
+
+.edit-btn:hover {
+    color: #2D5CFE;
+}
+
+.delete-btn {
+    color: #FF4C4C;
+}
+
+.delete-btn:hover {
+    color: #D32F2F;
+}
+
 .controls .clear-btn {
     border: none;
     opacity: 0.6;

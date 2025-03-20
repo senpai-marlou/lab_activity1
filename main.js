@@ -27,11 +27,12 @@ function showTodo(filter) {
                                 <p class="${completed}">${todo.name}</p>
                             </label>
                             <div class="settings">
-                                <i onclick="showMenu(this)" class="uil uil-ellipsis-h"></i>
-                                <ul class="task-menu">
-                                    <li onclick='editTask(${id}, "${todo.name}")'><i class="uil uil-pen"></i>Edit</li>
-                                    <li onclick='deleteTask(${id}, "${filter}")'><i class="uil uil-trash"></i>Delete</li>
-                                </ul>
+                                <button class="edit-btn" onclick='editTask(${id}, "${todo.name}")'>
+                                    <i class="fas fa-pen"></i>
+                                </button>
+                                <button class="delete-btn" onclick='deleteTask(${id}, "${filter}")'>
+                                    <i class="fas fa-trash"></i>
+                                </button>
                             </div>
                         </li>`;
             }
